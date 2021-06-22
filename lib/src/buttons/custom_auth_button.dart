@@ -35,4 +35,12 @@ class CustomAuthButton extends AuthButton {
   String getIconUrl() {
     return icon;
   }
+
+  @override
+  Color getButtonColor() {
+    if(style != null && style.buttonColor != null) {
+      return style.buttonColor;
+    }
+    return super.getButtonColor();
+  }
 }
