@@ -38,8 +38,8 @@ class CustomAuthButton extends AuthButton {
 
   @override
   Color getButtonColor() {
-    if(style != null && style.buttonColor != null) {
-      return style.buttonColor;
+    if (style != null && style!.buttonColor != null) {
+      return style!.buttonColor!;
     }
     return super.getButtonColor();
   }
